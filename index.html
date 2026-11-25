@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="">
+<html lang="id" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +24,9 @@
                         brand: {
                             red: '#e63946',
                             orange: '#f77f00',
-                            dark: '#12141d',
-                            card: '#1e2230',
-                            accent: '#3a86ff',
+                            dark: '#090d16',
+                            card: '#1e293b',
+                            accent: '#0ea5e9',
                             light: '#f8f9fa'
                         }
                     },
@@ -45,21 +45,21 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #f1f5f9;
+            background-color: #090d16;
         }
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #12141d;
+            background: #090d16;
         }
         ::-webkit-scrollbar-thumb {
-            background: #374151;
+            background: #334155;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #f77f00;
+            background: #0ea5e9;
         }
         .no-scrollbar {
             -ms-overflow-style: none;
@@ -107,58 +107,58 @@
         .cad-range::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             border-radius: 50%;
-            background: #e63946;
+            background: #0ea5e9;
             cursor: pointer;
             border: 2px solid #ffffff;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
         .cad-range::-moz-range-thumb {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             border-radius: 50%;
-            background: #e63946;
+            background: #0ea5e9;
             cursor: pointer;
             border: 2px solid #ffffff;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
-        /* Tema Dark Mode Manual Simulator CAD 3D */
+        /* Tema Dark Mode Simulator CAD 3D (Seragam dengan Palet 2 Tak vs 4 Tak) */
         #modal-cad-3d.cad-dark-theme {
-            background-color: #0b0f19 !important;
-            color: #e2e8f0 !important;
+            background-color: #090d16 !important;
+            color: #f1f5f9 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-top-header {
-            background-color: #111827 !important;
-            border-color: #1f2937 !important;
+            background-color: rgba(15, 23, 42, 0.95) !important;
+            border-color: #1e293b !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-top-header h2 {
-            color: #f8fafc !important;
+            color: #f1f5f9 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-top-header p {
             color: #94a3b8 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-mode-ribbon {
-            background-color: #0f172a !important;
+            background-color: rgba(15, 23, 42, 0.90) !important;
             border-color: #1e293b !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-mode-ribbon span {
-            color: #94a3b8 !important;
+            color: #64748b !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-sim-wrapper {
-            background-color: #0b0f19 !important;
+            background-color: #090d16 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck {
             background-color: #0f172a !important;
             border-color: #1e293b !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck > div {
-            background-color: #1e293b !important;
+            background-color: rgba(30, 41, 59, 0.65) !important;
             border-color: #334155 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck h3 {
-            color: #f8fafc !important;
+            color: #38bdf8 !important;
             border-color: #334155 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck .text-slate-700,
@@ -167,12 +167,37 @@
             color: #e2e8f0 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck .text-slate-600 {
-            color: #cbd5e1 !important;
+            color: #94a3b8 !important;
         }
         #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-slate-100 {
-            background-color: #0f172a !important;
+            background-color: #090d16 !important;
             border-color: #334155 !important;
             color: #cbd5e1 !important;
+        }
+        /* Penyesuaian Tombol Preset Pedal Saat Dark Mode */
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.15) !important;
+            border-color: rgba(16, 185, 129, 0.35) !important;
+            color: #6ee7b7 !important;
+        }
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-emerald-50:hover {
+            background-color: rgba(16, 185, 129, 0.25) !important;
+        }
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-amber-50 {
+            background-color: rgba(245, 158, 11, 0.15) !important;
+            border-color: rgba(245, 158, 11, 0.35) !important;
+            color: #fcd34d !important;
+        }
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-amber-50:hover {
+            background-color: rgba(245, 158, 11, 0.25) !important;
+        }
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-red-50 {
+            background-color: rgba(244, 63, 94, 0.15) !important;
+            border-color: rgba(244, 63, 94, 0.35) !important;
+            color: #fda4af !important;
+        }
+        #modal-cad-3d.cad-dark-theme #cad-control-deck .bg-red-50:hover {
+            background-color: rgba(244, 63, 94, 0.25) !important;
         }
         /* Penyesuaian Tombol Gigi Transmisi Saat Dark Mode */
         #modal-cad-3d.cad-dark-theme .gear-btn {
@@ -185,29 +210,30 @@
             border-color: #475569 !important;
         }
         #modal-cad-3d.cad-dark-theme #gear-btn-R {
-            color: #f87171 !important;
+            color: #fb7185 !important;
         }
-        #modal-cad-3d.cad-dark-theme #gear-btn-N {
-            background-color: #0f172a !important;
-            border-color: #334155 !important;
-            color: #e2e8f0 !important;
-        }
-        #modal-cad-3d.cad-dark-theme #gear-btn-N:hover {
+        #modal-cad-3d.cad-dark-theme #gear-btn-N:not(.gear-btn-active) {
             background-color: #1e293b !important;
+            border-color: #334155 !important;
+            color: #f1f5f9 !important;
+        }
+        #modal-cad-3d.cad-dark-theme #gear-btn-N:not(.gear-btn-active):hover {
+            background-color: #334155 !important;
+            border-color: #475569 !important;
         }
         #modal-cad-3d.cad-dark-theme .gear-btn.gear-btn-active {
-            background: linear-gradient(to right, #dc2626, #f97316) !important;
-            border-color: #fb923c !important;
+            background: #0284c7 !important;
+            border-color: #38bdf8 !important;
             color: #ffffff !important;
-            box-shadow: 0 2px 10px rgba(249, 115, 22, 0.35) !important;
+            box-shadow: 0 2px 10px rgba(14, 165, 233, 0.35) !important;
         }
         #modal-cad-3d.cad-dark-theme #gear-btn-N.gear-btn-active {
-            background: #020617 !important;
-            border-color: #f97316 !important;
+            background: #0284c7 !important;
+            border-color: #38bdf8 !important;
             color: #ffffff !important;
         }
         #modal-cad-3d.cad-dark-theme #ctrl-fault {
-            background-color: #0f172a !important;
+            background-color: #090d16 !important;
             border-color: #334155 !important;
             color: #f1f5f9 !important;
         }
@@ -215,9 +241,9 @@
         #modal-cad-3d.cad-dark-theme #sim-part-inspector,
         #modal-cad-3d.cad-dark-theme #sim-legend-bar,
         #modal-cad-3d.cad-dark-theme #btn-open-pure-3d {
-            background-color: rgba(15, 23, 42, 0.92) !important;
-            border-color: #334155 !important;
-            color: #e2e8f0 !important;
+            background-color: rgba(15, 23, 42, 0.90) !important;
+            border-color: rgba(51, 65, 85, 0.85) !important;
+            color: #f1f5f9 !important;
         }
         #modal-cad-3d.cad-dark-theme #sim-telemetry-panel .text-slate-900,
         #modal-cad-3d.cad-dark-theme #sim-part-inspector .text-slate-900 {
@@ -230,151 +256,291 @@
         #modal-cad-3d.cad-dark-theme #sim-telemetry-panel .border-slate-200 {
             border-color: #334155 !important;
         }
+
+        /* =====================================================================
+           TEMA LIGHT MODE SIMULATOR CAD 3D (PANEL KONTROL & UI IKUT BERUBAH)
+           ===================================================================== */
+        #modal-cad-3d:not(.cad-dark-theme) {
+            background-color: #f1f5f9 !important;
+            color: #0f172a !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            border-color: #cbd5e1 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header h2 {
+            color: #0f172a !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header p {
+            color: #475569 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header button.bg-slate-800 {
+            background-color: #f8fafc !important;
+            border-color: #cbd5e1 !important;
+            color: #334155 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header button.bg-slate-800:hover {
+            background-color: #e2e8f0 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header button.text-sky-400 {
+            color: #0284c7 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-top-header button.text-amber-400 {
+            color: #d97706 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-mode-ribbon {
+            background-color: rgba(248, 250, 252, 0.95) !important;
+            border-color: #cbd5e1 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-mode-ribbon span {
+            color: #64748b !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-sim-wrapper {
+            background-color: #f1f5f9 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck {
+            background-color: #f8fafc !important;
+            border-color: #cbd5e1 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck > div {
+            background-color: #ffffff !important;
+            border-color: #cbd5e1 !important;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06) !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck h3 {
+            color: #0284c7 !important;
+            border-color: #e2e8f0 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-slate-300,
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-slate-200,
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-slate-100 {
+            color: #1e293b !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-slate-400 {
+            color: #64748b !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-amber-400,
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-amber-300 {
+            color: #d97706 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-sky-400,
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-sky-300 {
+            color: #0284c7 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .text-emerald-400 {
+            color: #059669 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #cad-control-deck .bg-slate-100 {
+            background-color: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+            color: #334155 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #gear-btn-N:not(.gear-btn-active) {
+            background-color: #e2e8f0 !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) .gear-btn.gear-btn-active,
+        #modal-cad-3d:not(.cad-dark-theme) #gear-btn-N.gear-btn-active {
+            background-color: #0284c7 !important;
+            border-color: #38bdf8 !important;
+            color: #ffffff !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #ctrl-fault {
+            background-color: #ffffff !important;
+            border-color: #cbd5e1 !important;
+            color: #0f172a !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #shift-warning-banner {
+            background-color: #fef2f2 !important;
+            border-color: #f87171 !important;
+            color: #991b1b !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel,
+        #modal-cad-3d:not(.cad-dark-theme) #sim-part-inspector,
+        #modal-cad-3d:not(.cad-dark-theme) #sim-legend-bar,
+        #modal-cad-3d:not(.cad-dark-theme) #btn-open-pure-3d {
+            background-color: rgba(255, 255, 255, 0.94) !important;
+            border-color: #cbd5e1 !important;
+            color: #0f172a !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .border-slate-800 {
+            border-color: #e2e8f0 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-slate-100,
+        #modal-cad-3d:not(.cad-dark-theme) #sim-part-inspector .text-slate-100 {
+            color: #0f172a !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-slate-400,
+        #modal-cad-3d:not(.cad-dark-theme) #sim-part-inspector .text-slate-300 {
+            color: #475569 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-sky-400 {
+            color: #0284c7 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-emerald-400 {
+            color: #059669 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-rose-400 {
+            color: #e11d48 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-telemetry-panel .text-amber-400 {
+            color: #d97706 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-part-inspector .bg-sky-500\/20 {
+            background-color: #e0f2fe !important;
+            color: #0369a1 !important;
+        }
+        #modal-cad-3d:not(.cad-dark-theme) #sim-part-inspector .bg-slate-800 {
+            background-color: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+            color: #334155 !important;
+        }
     </style>
 </head>
-<body>
+<body class="bg-[#090d16] text-slate-100">
 
     <!-- =========================================================================
          3D CAD SIMULATOR (LAYAR PENUH & RESPONSIF)
          ========================================================================= -->
-    <div id="modal-cad-3d" class="fixed inset-0 z-[80] bg-slate-100 text-slate-800 flex flex-col w-screen h-[100dvh] overflow-hidden transition-colors duration-300">
+    <div id="modal-cad-3d" class="cad-dark-theme fixed inset-0 z-[80] bg-[#090d16] text-slate-100 flex flex-col w-screen h-[100dvh] overflow-hidden transition-colors duration-300">
         <!-- HEADER SIMULATOR -->
-        <div id="cad-top-header" class="bg-white border-b border-slate-300 px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-2 shadow-sm flex-shrink-0 z-20 transition-colors duration-300">
+        <div id="cad-top-header" class="bg-[#0f172a]/95 border-b border-slate-800 px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-2 shadow-sm flex-shrink-0 z-20 transition-colors duration-300 backdrop-blur-md">
             <div class="flex items-center gap-2.5 min-w-0">
-                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-tr from-red-600 to-orange-500 text-white flex items-center justify-center flex-shrink-0 shadow">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-br from-sky-500 to-blue-700 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-500/20">
                     <i class="fa-solid fa-gears text-sm sm:text-base"></i>
                 </div>
                 <div class="min-w-0">
-                    <h2 class="text-xs sm:text-base font-extrabold font-tech text-slate-900 truncate">
+                    <h2 class="text-xs sm:text-base font-extrabold font-tech text-slate-100 truncate">
                         3D CAD LAB: KOPLING HIDROLIK &amp; TRANSMISI 5-SPEED
                     </h2>
-                    <p class="text-[10px] text-slate-500 hidden sm:block">Drag: Putar 360° • Scroll/Pinch: Zoom • Klik Kanan/2-Jari: Geser • Klik Komponen: Inspeksi</p>
+                    <p class="text-[10px] text-slate-400 hidden sm:block">Drag: Putar 360° • Scroll/Pinch: Zoom • Klik Kanan/2-Jari: Geser • Klik Komponen: Inspeksi</p>
                 </div>
             </div>
 
             <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                <button type="button" id="sim-btn-play" onclick="toggleSimPlay()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm">
+                <button type="button" id="sim-btn-play" onclick="toggleSimPlay()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm">
                     <i class="fa-solid fa-pause"></i> <span class="hidden sm:inline">Pause</span>
                 </button>
-                <button type="button" id="sim-btn-theme" onclick="toggleCadTheme()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 text-[11px] font-bold flex items-center gap-1 shadow-sm" title="Ganti Tema Gelap / Terang Simulator">
-                    <i id="sim-theme-icon" class="fa-solid fa-moon"></i> <span id="sim-theme-label" class="hidden sm:inline">Dark</span>
+                <button type="button" id="sim-btn-theme" onclick="toggleCadTheme()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 text-[11px] font-bold flex items-center gap-1 shadow-sm" title="Ganti Tema Gelap / Terang Simulator">
+                    <i id="sim-theme-icon" class="fa-solid fa-sun"></i> <span id="sim-theme-label" class="hidden sm:inline">Light</span>
                 </button>
-                <button type="button" onclick="toggleSimTelemetry()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm">
-                    <i class="fa-solid fa-gauge-high text-orange-400"></i> <span class="hidden sm:inline">Data</span>
+                <button type="button" onclick="toggleSimTelemetry()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-sky-400 text-[11px] font-bold flex items-center gap-1 shadow-sm">
+                    <i class="fa-solid fa-gauge-high text-sky-400"></i> <span class="hidden sm:inline">Data</span>
                 </button>
-                <button type="button" onclick="resetSimCamera()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-800 text-[11px] font-bold flex items-center gap-1">
+                <button type="button" onclick="resetSimCamera()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 text-[11px] font-bold flex items-center gap-1">
                     <i class="fa-solid fa-video"></i> <span class="hidden md:inline">Kamera</span>
                 </button>
-                <button type="button" onclick="togglePureCadFullscreen()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm" title="Tampilkan Khusus Area CAD 3D">
+                <button type="button" onclick="togglePureCadFullscreen()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm" title="Tampilkan Khusus Area CAD 3D">
                     <i class="fa-solid fa-maximize"></i> <span class="hidden sm:inline">Full 3D</span>
                 </button>
-                <button type="button" onclick="resetSimAll()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm">
+                <button type="button" onclick="resetSimAll()" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 text-[11px] font-bold flex items-center gap-1 shadow-sm">
                     <i class="fa-solid fa-rotate-left"></i> <span class="hidden md:inline">Reset</span>
                 </button>
             </div>
         </div>
 
         <!-- MODE VISUALISASI RIBBON (TANPA SCROLLBAR VISUAL, TETAP BISA DI-SCROLL KIRI-KANAN) -->
-        <div id="cad-mode-ribbon" class="bg-slate-100 border-b border-slate-300 px-3 py-1.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-shrink-0 z-10 transition-colors duration-300">
+        <div id="cad-mode-ribbon" class="bg-slate-900/90 border-b border-slate-800 px-3 py-1.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-shrink-0 z-10 transition-colors duration-300">
             <span class="text-[10px] font-bold text-slate-500 uppercase mr-1 flex-shrink-0">Tampilan:</span>
-            <button type="button" data-vismode="normal" onclick="setSimVisMode('normal')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-900 text-white flex-shrink-0">Normal</button>
-            <button type="button" data-vismode="hyd_cutaway" onclick="setSimVisMode('hyd_cutaway')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Cutaway Hidrolik</button>
-            <button type="button" data-vismode="mech_cutaway" onclick="setSimVisMode('mech_cutaway')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Cutaway Mekanik</button>
-            <button type="button" data-vismode="fluid_flow" onclick="setSimVisMode('fluid_flow')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Aliran Fluida</button>
-            <button type="button" data-vismode="pressure" onclick="setSimVisMode('pressure')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Tekanan Pascal</button>
-            <button type="button" data-vismode="torque_flow" onclick="setSimVisMode('torque_flow')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Aliran Torsi</button>
-            <button type="button" data-vismode="exploded" onclick="setSimVisMode('exploded')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Exploded View</button>
-            <button type="button" data-vismode="sync_view" onclick="setSimVisMode('sync_view')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0">Synchronizer</button>
+            <button type="button" data-vismode="normal" onclick="setSimVisMode('normal')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-bold bg-sky-600 text-white shadow-sm flex-shrink-0">Normal</button>
+            <button type="button" data-vismode="hyd_cutaway" onclick="setSimVisMode('hyd_cutaway')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Cutaway Hidrolik</button>
+            <button type="button" data-vismode="mech_cutaway" onclick="setSimVisMode('mech_cutaway')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Cutaway Mekanik</button>
+            <button type="button" data-vismode="fluid_flow" onclick="setSimVisMode('fluid_flow')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Aliran Fluida</button>
+            <button type="button" data-vismode="pressure" onclick="setSimVisMode('pressure')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Tekanan Pascal</button>
+            <button type="button" data-vismode="torque_flow" onclick="setSimVisMode('torque_flow')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Aliran Torsi</button>
+            <button type="button" data-vismode="exploded" onclick="setSimVisMode('exploded')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Exploded View</button>
+            <button type="button" data-vismode="sync_view" onclick="setSimVisMode('sync_view')" class="sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0">Synchronizer</button>
         </div>
 
         <!-- WORKSPACE 3D + PANEL KONTROL -->
         <div id="cad-workspace" class="flex-1 flex flex-col lg:flex-row min-h-0 overflow-hidden">
             <!-- AREA VIEWPORT 3D -->
-            <div id="cad-sim-wrapper" class="relative w-full h-[52%] sm:h-[58%] lg:h-full lg:flex-1 bg-slate-100 overflow-hidden select-none transition-colors duration-300">
+            <div id="cad-sim-wrapper" class="relative w-full h-[52%] sm:h-[58%] lg:h-full lg:flex-1 bg-[#090d16] overflow-hidden select-none transition-colors duration-300">
                 <div id="cad-canvas-container" class="w-full h-full"></div>
 
                 <!-- TOMBOL KELUAR FULL 3D MODE -->
                 <button type="button" id="btn-exit-pure-3d" onclick="togglePureCadFullscreen()" class="hidden absolute top-3 right-3 z-30 px-3.5 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-white text-xs font-extrabold shadow-xl border border-slate-700 items-center gap-1.5">
-                    <i class="fa-solid fa-minimize text-orange-400"></i> Tampilkan Panel Kontrol
+                    <i class="fa-solid fa-minimize text-sky-400"></i> Tampilkan Panel Kontrol
                 </button>
 
                 <!-- TOMBOL FLOATING FULLSCREEN AREA 3D -->
-                <button type="button" id="btn-open-pure-3d" onclick="togglePureCadFullscreen()" class="absolute bottom-2.5 right-2.5 z-20 px-2.5 py-1.5 rounded-lg bg-white/90 hover:bg-white text-slate-800 border border-slate-300 shadow-md text-[11px] font-bold flex items-center gap-1.5">
-                    <i class="fa-solid fa-expand text-blue-600"></i> Layar Penuh 3D
+                <button type="button" id="btn-open-pure-3d" onclick="togglePureCadFullscreen()" class="absolute bottom-2.5 right-2.5 z-20 px-2.5 py-1.5 rounded-lg bg-slate-900/85 hover:bg-slate-800 text-slate-100 border border-slate-700/80 backdrop-blur-md shadow-md text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fa-solid fa-expand text-sky-400"></i> Layar Penuh 3D
                 </button>
 
                 <!-- PANEL TELEMETRI REAL-TIME (TERSEMBUNYI SECARA DEFAULT) -->
-                <div id="sim-telemetry-panel" class="hidden absolute top-2.5 left-2.5 z-10 bg-white/95 backdrop-blur-md border border-slate-300 rounded-xl p-2.5 sm:p-3 shadow-xl w-[235px] sm:w-[270px] text-[10px] sm:text-[11px] space-y-1.5">
-                    <div class="flex items-center justify-between border-b border-slate-200 pb-1">
-                        <span class="font-extrabold font-tech text-slate-900 tracking-wide">TELEMETRI FISIKA</span>
+                <div id="sim-telemetry-panel" class="hidden absolute top-2.5 left-2.5 z-10 bg-slate-900/95 backdrop-blur-xl border border-slate-700/90 rounded-xl p-2.5 sm:p-3 shadow-xl w-[235px] sm:w-[270px] text-[10px] sm:text-[11px] space-y-1.5">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-1">
+                        <span class="font-extrabold font-tech text-slate-100 tracking-wide">TELEMETRI FISIKA</span>
                         <div class="flex items-center gap-1.5">
-                            <span id="tele-gear-badge" class="px-1.5 py-0.5 rounded bg-slate-900 text-white font-bold font-mono text-[10px]">GIGI: N</span>
-                            <button type="button" onclick="toggleSimTelemetry()" class="w-5 h-5 rounded bg-slate-200 hover:bg-red-100 text-slate-600 hover:text-red-600 flex items-center justify-center">
+                            <span id="tele-gear-badge" class="px-1.5 py-0.5 rounded bg-sky-600 text-white font-bold font-mono text-[10px]">GIGI: N</span>
+                            <button type="button" onclick="toggleSimTelemetry()" class="w-5 h-5 rounded bg-slate-800 hover:bg-rose-500/20 text-slate-400 hover:text-rose-400 flex items-center justify-center">
                                 <i class="fa-solid fa-xmark text-[10px]"></i>
                             </button>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-x-2 gap-y-1 font-mono text-[10px]">
-                        <div class="text-slate-500">Engine / Flywheel:</div>
-                        <div class="text-right font-bold text-slate-900" id="tele-rpm-engine">850 RPM</div>
-                        <div class="text-slate-500">Input / Counter:</div>
-                        <div class="text-right font-bold text-blue-700" id="tele-rpm-input">850 / 531</div>
-                        <div class="text-slate-500">Main / Output:</div>
-                        <div class="text-right font-bold text-emerald-700" id="tele-rpm-output">0 RPM</div>
-                        <div class="text-slate-500">Rasio Transmisi:</div>
-                        <div class="text-right font-bold text-slate-900" id="tele-ratio">Netral</div>
-                        <div class="text-slate-500">Gaya Pedal / Slave:</div>
-                        <div class="text-right font-bold text-slate-900" id="tele-force">0 / 0 N</div>
-                        <div class="text-slate-500">Tekanan Pascal:</div>
-                        <div class="text-right font-bold text-red-600" id="tele-pressure">0.00 MPa</div>
-                        <div class="text-slate-500">Langkah Master/Slave:</div>
-                        <div class="text-right font-bold text-slate-900" id="tele-stroke">0.0 / 0.0 mm</div>
-                        <div class="text-slate-500">Torsi Output / Slip:</div>
-                        <div class="text-right font-bold text-amber-700" id="tele-torque-slip">0 Nm | 0%</div>
+                        <div class="text-slate-400">Engine / Flywheel:</div>
+                        <div class="text-right font-bold text-slate-100" id="tele-rpm-engine">850 RPM</div>
+                        <div class="text-slate-400">Input / Counter:</div>
+                        <div class="text-right font-bold text-sky-400" id="tele-rpm-input">850 / 531</div>
+                        <div class="text-slate-400">Main / Output:</div>
+                        <div class="text-right font-bold text-emerald-400" id="tele-rpm-output">0 RPM</div>
+                        <div class="text-slate-400">Rasio Transmisi:</div>
+                        <div class="text-right font-bold text-slate-100" id="tele-ratio">Netral</div>
+                        <div class="text-slate-400">Gaya Pedal / Slave:</div>
+                        <div class="text-right font-bold text-slate-100" id="tele-force">0 / 0 N</div>
+                        <div class="text-slate-400">Tekanan Pascal:</div>
+                        <div class="text-right font-bold text-rose-400" id="tele-pressure">0.00 MPa</div>
+                        <div class="text-slate-400">Langkah Master/Slave:</div>
+                        <div class="text-right font-bold text-slate-100" id="tele-stroke">0.0 / 0.0 mm</div>
+                        <div class="text-slate-400">Torsi Output / Slip:</div>
+                        <div class="text-right font-bold text-amber-400" id="tele-torque-slip">0 Nm | 0%</div>
                     </div>
                 </div>
 
                 <!-- INSPEKTOR KOMPONEN KONTEKSTUAL (MUNCUL SAAT KOMPONEN DIKLIK) -->
-                <div id="sim-part-inspector" class="hidden absolute bottom-2.5 left-2.5 z-10 bg-white/95 backdrop-blur-md border border-slate-300 rounded-xl p-2.5 sm:p-3 shadow-xl max-w-[270px] sm:max-w-[330px] text-xs space-y-1.5">
+                <div id="sim-part-inspector" class="hidden absolute bottom-2.5 left-2.5 z-10 bg-slate-900/95 backdrop-blur-xl border border-sky-500/40 rounded-xl p-2.5 sm:p-3 shadow-xl max-w-[270px] sm:max-w-[330px] text-xs space-y-1.5">
                     <div class="flex items-center justify-between gap-2">
-                        <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-red-100 text-red-700">Inspeksi Komponen</span>
-                        <button type="button" onclick="clearSimSelection()" class="w-5 h-5 rounded bg-slate-200 hover:bg-red-100 text-slate-600 hover:text-red-600 flex items-center justify-center">
+                        <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-sky-500/20 text-sky-300">Inspeksi Komponen</span>
+                        <button type="button" onclick="clearSimSelection()" class="w-5 h-5 rounded bg-slate-800 hover:bg-rose-500/20 text-slate-400 hover:text-rose-400 flex items-center justify-center">
                             <i class="fa-solid fa-xmark text-[10px]"></i>
                         </button>
                     </div>
-                    <h4 id="insp-part-name" class="font-extrabold font-tech text-slate-900 text-xs sm:text-sm">-</h4>
-                    <p id="insp-part-desc" class="text-[11px] text-slate-600 leading-snug">-</p>
+                    <h4 id="insp-part-name" class="font-extrabold font-tech text-slate-100 text-xs sm:text-sm">-</h4>
+                    <p id="insp-part-desc" class="text-[11px] text-slate-300 leading-snug">-</p>
                     <div class="flex items-center gap-1.5 pt-1">
-                        <button type="button" id="btn-toggle-part-vis" onclick="toggleSelectedPartVisibility()" class="px-2 py-1 rounded bg-slate-800 text-white text-[10px] font-bold">
+                        <button type="button" id="btn-toggle-part-vis" onclick="toggleSelectedPartVisibility()" class="px-2 py-1 rounded bg-sky-600 hover:bg-sky-500 text-white text-[10px] font-bold">
                             <i class="fa-solid fa-eye-slash mr-1"></i> Sembunyikan
                         </button>
-                        <button type="button" onclick="showAllSimParts()" class="px-2 py-1 rounded bg-slate-200 text-slate-800 text-[10px] font-bold">
+                        <button type="button" onclick="showAllSimParts()" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-[10px] font-bold">
                             Tampilkan Semua
                         </button>
                     </div>
                 </div>
 
                 <!-- LEGENDA WARNA TEKANAN & TORSI -->
-                <div id="sim-legend-bar" class="hidden sm:flex absolute bottom-2.5 left-1/2 -translate-x-1/2 z-10 bg-white/90 backdrop-blur border border-slate-300 rounded-lg px-2.5 py-1.5 shadow text-[10px] items-center gap-3">
-                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span> Rendah</div>
+                <div id="sim-legend-bar" class="hidden sm:flex absolute bottom-2.5 left-1/2 -translate-x-1/2 z-10 bg-slate-900/85 backdrop-blur-md border border-slate-700/80 rounded-full px-3.5 py-1.5 shadow text-[10px] text-slate-200 items-center gap-3">
+                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-sky-400 inline-block"></span> Rendah</div>
                     <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span> Sedang</div>
-                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block"></span> Tinggi</div>
-                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> Torsi Aktif</div>
+                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span> Tinggi</div>
+                    <div class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span> Torsi Aktif</div>
                 </div>
             </div>
 
             <!-- PANEL KONTROL SAMPING (DESKTOP) / BAWAH (MOBILE) -->
-            <div id="cad-control-deck" class="w-full h-[48%] sm:h-[42%] lg:h-full lg:w-[375px] xl:w-[415px] bg-slate-50 border-t lg:border-t-0 lg:border-l border-slate-300 overflow-y-auto p-3 sm:p-4 space-y-3 flex-shrink-0 transition-colors duration-300">
+            <div id="cad-control-deck" class="w-full h-[48%] sm:h-[42%] lg:h-full lg:w-[375px] xl:w-[415px] bg-[#0f172a] border-t lg:border-t-0 lg:border-l border-slate-800 overflow-y-auto p-3 sm:p-4 space-y-3 flex-shrink-0 transition-colors duration-300">
 
                 <!-- 1. PEDAL KOPLING & MESIN -->
-                <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm space-y-2.5">
-                    <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
-                        <h3 class="text-[11px] font-extrabold font-tech text-slate-900 uppercase">1. Pedal Kopling &amp; Mesin</h3>
-                        <span id="lbl-pedal-pct" class="text-xs font-extrabold text-red-600 font-mono">0% (Dilepas)</span>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-3 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-slate-700/80 pb-1.5">
+                        <h3 class="text-[11px] font-extrabold font-tech text-sky-400 uppercase">1. Pedal Kopling &amp; Mesin</h3>
+                        <span id="lbl-pedal-pct" class="text-xs font-extrabold text-amber-400 font-mono">0% (Dilepas)</span>
                     </div>
 
                     <div class="space-y-1">
-                        <div class="flex justify-between text-[11px] font-semibold text-slate-700">
+                        <div class="flex justify-between text-[11px] font-semibold text-slate-300">
                             <span>Injak Pedal Kopling</span>
                             <span class="text-slate-400">0% – 100%</span>
                         </div>
@@ -388,16 +554,16 @@
 
                     <div class="grid grid-cols-2 gap-2.5 pt-1">
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>RPM Mesin</span>
-                                <span id="lbl-rpm" class="font-mono font-bold text-slate-900">850</span>
+                                <span id="lbl-rpm" class="font-mono font-bold text-amber-400">850</span>
                             </div>
                             <input type="range" id="ctrl-rpm" min="600" max="4500" step="50" value="850" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>Beban Output</span>
-                                <span id="lbl-load" class="font-mono font-bold text-slate-900">35 Nm</span>
+                                <span id="lbl-load" class="font-mono font-bold text-sky-400">35 Nm</span>
                             </div>
                             <input type="range" id="ctrl-load" min="0" max="250" step="5" value="35" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
@@ -405,10 +571,10 @@
                 </div>
 
                 <!-- 2. TUAS TRANSMISI H-PATTERN -->
-                <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
-                        <h3 class="text-[11px] font-extrabold font-tech text-slate-900 uppercase">2. Tuas Transmisi H-Pattern</h3>
-                        <span id="lbl-gear-status" class="text-[10px] font-bold text-emerald-700">Siap Pindah</span>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-3 shadow-sm space-y-2">
+                    <div class="flex items-center justify-between border-b border-slate-700/80 pb-1.5">
+                        <h3 class="text-[11px] font-extrabold font-tech text-sky-400 uppercase">2. Tuas Transmisi H-Pattern</h3>
+                        <span id="lbl-gear-status" class="text-[10px] font-bold text-emerald-400">Siap Pindah</span>
                     </div>
 
                     <div class="bg-slate-100 rounded-xl p-2 border border-slate-300">
@@ -418,7 +584,7 @@
                             <button type="button" onclick="requestGearShift('3')" id="gear-btn-3" class="gear-btn py-2 rounded-lg bg-white border border-slate-300 font-tech font-extrabold text-xs text-slate-800 hover:bg-slate-200">3</button>
                             <button type="button" onclick="requestGearShift('5')" id="gear-btn-5" class="gear-btn py-2 rounded-lg bg-white border border-slate-300 font-tech font-extrabold text-xs text-slate-800 hover:bg-slate-200">5</button>
 
-                            <button type="button" onclick="requestGearShift('N')" id="gear-btn-N" class="gear-btn gear-btn-active col-span-4 py-1.5 rounded-lg bg-slate-900 text-white font-tech font-extrabold text-[11px]">NETRAL (N)</button>
+                            <button type="button" onclick="requestGearShift('N')" id="gear-btn-N" class="gear-btn gear-btn-active col-span-4 py-1.5 rounded-lg bg-sky-600 text-white font-tech font-extrabold text-[11px]">NETRAL (N)</button>
 
                             <div class="py-1.5 text-[10px] text-slate-400 font-mono flex items-center justify-center">REV</div>
                             <button type="button" onclick="requestGearShift('2')" id="gear-btn-2" class="gear-btn py-2 rounded-lg bg-white border border-slate-300 font-tech font-extrabold text-xs text-slate-800 hover:bg-slate-200">2</button>
@@ -426,51 +592,51 @@
                             <div class="py-1.5 text-[10px] text-slate-400 font-mono flex items-center justify-center">5-SPD</div>
                         </div>
                     </div>
-                    <p id="shift-warning-banner" class="hidden text-[10px] font-bold text-red-700 bg-red-50 border border-red-300 rounded-lg px-2.5 py-1.5">
-                        <i class="fa-solid fa-triangle-exclamation mr-1"></i> Injak pedal kopling minimal 70% sebelum memindahkan gigi!
+                    <p id="shift-warning-banner" class="hidden text-[10px] font-bold text-rose-200 bg-rose-950/90 border border-rose-500 rounded-lg px-2.5 py-1.5">
+                        <i class="fa-solid fa-triangle-exclamation mr-1 text-rose-400"></i> Injak pedal kopling minimal 70% sebelum memindahkan gigi!
                     </p>
                 </div>
 
                 <!-- 3. PARAMETER FISIKA HIDROLIK & KOPLING -->
-                <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm space-y-2.5">
-                    <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
-                        <h3 class="text-[11px] font-extrabold font-tech text-slate-900 uppercase">3. Parameter Fisika &amp; Kecepatan</h3>
-                        <span id="lbl-speed" class="text-[10px] font-mono font-bold text-blue-700">1.0x</span>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-3 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-slate-700/80 pb-1.5">
+                        <h3 class="text-[11px] font-extrabold font-tech text-sky-400 uppercase">3. Parameter Fisika &amp; Kecepatan</h3>
+                        <span id="lbl-speed" class="text-[10px] font-mono font-bold text-emerald-400">1.0x</span>
                     </div>
 
                     <div class="grid grid-cols-2 gap-2.5">
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>Dia. Master Cyl</span>
-                                <span id="lbl-master-dia" class="font-mono font-bold">15.9 mm</span>
+                                <span id="lbl-master-dia" class="font-mono font-bold text-sky-300">15.9 mm</span>
                             </div>
                             <input type="range" id="ctrl-master-dia" min="12" max="22" step="0.1" value="15.9" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>Dia. Slave Cyl</span>
-                                <span id="lbl-slave-dia" class="font-mono font-bold">20.6 mm</span>
+                                <span id="lbl-slave-dia" class="font-mono font-bold text-sky-300">20.6 mm</span>
                             </div>
                             <input type="range" id="ctrl-slave-dia" min="16" max="28" step="0.1" value="20.6" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>Rasio Pedal</span>
-                                <span id="lbl-pedal-ratio" class="font-mono font-bold">5.5 : 1</span>
+                                <span id="lbl-pedal-ratio" class="font-mono font-bold text-amber-300">5.5 : 1</span>
                             </div>
                             <input type="range" id="ctrl-pedal-ratio" min="3.5" max="8.0" step="0.1" value="5.5" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
                         <div class="space-y-1">
-                            <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                            <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                                 <span>Koef. Gesek (μ)</span>
-                                <span id="lbl-friction" class="font-mono font-bold">0.35</span>
+                                <span id="lbl-friction" class="font-mono font-bold text-amber-300">0.35</span>
                             </div>
                             <input type="range" id="ctrl-friction" min="0.10" max="0.50" step="0.01" value="0.35" oninput="onSimParamChange()" class="w-full cad-range">
                         </div>
                     </div>
 
                     <div class="space-y-1">
-                        <div class="flex justify-between text-[10px] font-semibold text-slate-700">
+                        <div class="flex justify-between text-[10px] font-semibold text-slate-300">
                             <span>Kecepatan Animasi</span>
                             <span class="text-slate-400">0.2x – 2.0x</span>
                         </div>
@@ -479,9 +645,9 @@
                 </div>
 
                 <!-- 4. SIMULASI KERUSAKAN / GANGGUAN -->
-                <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm space-y-2">
-                    <h3 class="text-[11px] font-extrabold font-tech text-slate-900 uppercase border-b border-slate-100 pb-1.5">4. Eksperimen Gangguan / Kerusakan</h3>
-                    <select id="ctrl-fault" onchange="onSimParamChange()" class="w-full bg-slate-100 border border-slate-300 rounded-lg px-2.5 py-2 text-xs font-semibold text-slate-800 focus:outline-none focus:border-red-500">
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-3 shadow-sm space-y-2">
+                    <h3 class="text-[11px] font-extrabold font-tech text-sky-400 uppercase border-b border-slate-700/80 pb-1.5">4. Eksperimen Gangguan / Kerusakan</h3>
+                    <select id="ctrl-fault" onchange="onSimParamChange()" class="w-full bg-slate-100 border border-slate-300 rounded-lg px-2.5 py-2 text-xs font-semibold text-slate-800 focus:outline-none focus:border-sky-500">
                         <option value="none">0. Kondisi Normal (Standar Pabrikan)</option>
                         <option value="air_in_line">1. Udara Masuk ke Saluran Hidrolik (Masuk Angin)</option>
                         <option value="pipe_leak">2. Kebocoran Hydraulic Pipeline</option>
@@ -494,7 +660,7 @@
                         <option value="worn_sync">9. Synchronizer Ring Aus (Gigi Menggeretak)</option>
                         <option value="damaged_gear">10. Gigi Transmisi Mengalami Kerusakan</option>
                     </select>
-                    <p id="lbl-fault-effect" class="text-[10px] text-slate-600 bg-slate-100 p-2 rounded-lg leading-relaxed">
+                    <p id="lbl-fault-effect" class="text-[10px] text-slate-300 bg-slate-100 p-2 rounded-lg leading-relaxed">
                         Sistem kopling hidrolik dan transmisi bekerja dalam kondisi optimal sesuai spesifikasi pabrikan.
                     </p>
                 </div>
@@ -896,7 +1062,7 @@
             constructor(container) {
                 this.container = container;
                 this.visMode = 'normal';
-                this.themeMode = 'light';
+                this.themeMode = 'dark';
                 this.selectedPartKey = null;
                 this.partGroups = {};
                 this.selectableMeshes = [];
@@ -910,8 +1076,8 @@
 
             initScene() {
                 this.scene = new THREE.Scene();
-                this.scene.background = new THREE.Color(0xf1f5f9);
-                this.scene.fog = new THREE.Fog(0xf1f5f9, 18, 36);
+                this.scene.background = new THREE.Color(0x090d16);
+                this.scene.fog = new THREE.Fog(0x090d16, 18, 36);
 
                 const w = Math.max(1, this.container.clientWidth);
                 const h = Math.max(1, this.container.clientHeight);
@@ -933,31 +1099,32 @@
                 this.controls.maxDistance = 18.0;
 
                 // Pencahayaan Studio 3-Titik
-                this.hemiLight = new THREE.HemisphereLight(0xffffff, 0xcbd5e1, 1.05);
+                this.hemiLight = new THREE.HemisphereLight(0xe2e8f0, 0x1e293b, 1.15);
                 this.hemiLight.position.set(0, 10, 0);
                 this.scene.add(this.hemiLight);
 
-                this.dirLight1 = new THREE.DirectionalLight(0xffffff, 0.95);
+                this.dirLight1 = new THREE.DirectionalLight(0xffffff, 1.1);
                 this.dirLight1.position.set(6, 9, 8);
                 this.scene.add(this.dirLight1);
 
-                this.dirLight2 = new THREE.DirectionalLight(0xe0f2fe, 0.45);
+                this.dirLight2 = new THREE.DirectionalLight(0x38bdf8, 0.55);
                 this.dirLight2.position.set(-7, -4, -6);
                 this.scene.add(this.dirLight2);
 
-                this.gridLight = new THREE.GridHelper(16, 32, 0x94a3b8, 0xe2e8f0);
+                this.gridLight = new THREE.GridHelper(16, 32, 0x94a3b8, 0xcbd5e1);
                 this.gridLight.position.y = -2.25;
+                this.gridLight.visible = false;
                 this.scene.add(this.gridLight);
 
                 this.gridDark = new THREE.GridHelper(16, 32, 0x334155, 0x1e293b);
                 this.gridDark.position.y = -2.25;
-                this.gridDark.visible = false;
+                this.gridDark.visible = true;
                 this.scene.add(this.gridDark);
             }
 
             setTheme(isDark) {
                 this.themeMode = isDark ? 'dark' : 'light';
-                const bgHex = isDark ? 0x0b0f19 : 0xf1f5f9;
+                const bgHex = isDark ? 0x090d16 : 0xf1f5f9;
                 this.scene.background = new THREE.Color(bgHex);
                 this.scene.fog = new THREE.Fog(bgHex, 18, 36);
 
@@ -2145,7 +2312,7 @@
         const simState = {
             isOpen: false,
             isPlaying: true,
-            isDarkTheme: false,
+            isDarkTheme: true,
             animSpeed: 1.0,
             loadTorqueNm: 35,
             targetPedalPct: null,
@@ -2181,23 +2348,25 @@
             if (!modal) return;
 
             simState.isDarkTheme = !simState.isDarkTheme;
+            document.documentElement.classList.toggle('dark', simState.isDarkTheme);
             if (simState.isDarkTheme) {
                 modal.classList.add('cad-dark-theme');
                 if (icon) icon.className = 'fa-solid fa-sun';
                 if (label) label.innerText = 'Light';
                 if (btn) {
-                    btn.classList.remove('bg-slate-800', 'hover:bg-slate-700', 'text-amber-300');
-                    btn.classList.add('bg-amber-500', 'hover:bg-amber-600', 'text-slate-950');
+                    btn.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 text-[11px] font-bold flex items-center gap-1 shadow-sm';
                 }
             } else {
                 modal.classList.remove('cad-dark-theme');
                 if (icon) icon.className = 'fa-solid fa-moon';
                 if (label) label.innerText = 'Dark';
                 if (btn) {
-                    btn.classList.remove('bg-amber-500', 'hover:bg-amber-600', 'text-slate-950');
-                    btn.classList.add('bg-slate-800', 'hover:bg-slate-700', 'text-amber-300');
+                    btn.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 border border-slate-300 text-indigo-600 text-[11px] font-bold flex items-center gap-1 shadow-sm';
                 }
             }
+
+            const activeBtn = document.querySelector('.sim-mode-btn[data-active="true"]');
+            setSimVisMode(activeBtn ? activeBtn.getAttribute('data-vismode') : 'normal');
 
             if (simState.visualizer) {
                 simState.visualizer.setTheme(simState.isDarkTheme);
@@ -2270,11 +2439,11 @@
             const btn = document.getElementById('sim-btn-play');
             if (btn) {
                 if (simState.isPlaying) {
-                    btn.className = "px-2.5 sm:px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm";
+                    btn.className = "px-2.5 sm:px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm";
                     btn.innerHTML = `<i class="fa-solid fa-pause"></i> <span class="hidden sm:inline">Pause</span>`;
                     simState.lastTimestamp = performance.now();
                 } else {
-                    btn.className = "px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm";
+                    btn.className = "px-2.5 sm:px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm";
                     btn.innerHTML = `<i class="fa-solid fa-play"></i> <span class="hidden sm:inline">Play</span>`;
                 }
             }
@@ -2291,9 +2460,14 @@
 
             document.querySelectorAll('.sim-mode-btn').forEach(btn => {
                 const active = btn.getAttribute('data-vismode') === mode;
-                btn.className = active
-                    ? "sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-900 text-white flex-shrink-0"
-                    : "sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0";
+                btn.setAttribute('data-active', active ? 'true' : 'false');
+                if (active) {
+                    btn.className = "sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-bold bg-sky-600 text-white shadow-sm flex-shrink-0";
+                } else if (simState.isDarkTheme) {
+                    btn.className = "sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 flex-shrink-0";
+                } else {
+                    btn.className = "sim-mode-btn px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white text-slate-700 border border-slate-300 flex-shrink-0";
+                }
             });
         }
 
@@ -2390,12 +2564,12 @@
                 btn.classList.toggle('gear-btn-active', isSelected);
                 if (g === 'N') {
                     btn.className = isSelected
-                        ? "gear-btn gear-btn-active col-span-4 py-1.5 rounded-lg bg-slate-900 text-white font-tech font-extrabold text-[11px]"
+                        ? "gear-btn gear-btn-active col-span-4 py-1.5 rounded-lg bg-sky-600 text-white font-tech font-extrabold text-[11px]"
                         : "gear-btn col-span-4 py-1.5 rounded-lg bg-slate-200 text-slate-800 font-tech font-extrabold text-[11px] hover:bg-slate-300";
                 } else {
                     const baseText = g === 'R' ? 'text-red-600' : 'text-slate-800';
                     btn.className = isSelected
-                        ? "gear-btn gear-btn-active py-2 rounded-lg bg-red-600 border border-red-700 font-tech font-extrabold text-xs text-white shadow"
+                        ? "gear-btn gear-btn-active py-2 rounded-lg bg-sky-600 border border-sky-400 font-tech font-extrabold text-xs text-white shadow"
                         : `gear-btn py-2 rounded-lg bg-white border border-slate-300 font-tech font-extrabold text-xs ${baseText} hover:bg-slate-200`;
                 }
             });
@@ -2449,19 +2623,19 @@
             if (statusLbl) {
                 if (g.syncState === 'neutralizing') {
                     statusLbl.innerText = 'Melepas Gigi...';
-                    statusLbl.className = 'text-[10px] font-bold text-amber-600';
+                    statusLbl.className = 'text-[10px] font-bold text-amber-400';
                 } else if (g.syncState === 'baulking') {
                     statusLbl.innerText = `Baulking Ring (${Math.round(g.baulkFrictionProgress * 100)}%)`;
-                    statusLbl.className = 'text-[10px] font-bold text-orange-600';
+                    statusLbl.className = 'text-[10px] font-bold text-amber-400';
                 } else if (g.syncState === 'locking') {
                     statusLbl.innerText = 'Mengunci Dog Teeth...';
-                    statusLbl.className = 'text-[10px] font-bold text-blue-600';
+                    statusLbl.className = 'text-[10px] font-bold text-sky-400';
                 } else if (activeGear === 'N') {
                     statusLbl.innerText = 'Netral (N)';
-                    statusLbl.className = 'text-[10px] font-bold text-slate-600';
+                    statusLbl.className = 'text-[10px] font-bold text-slate-400';
                 } else {
                     statusLbl.innerText = `Terkunci Gigi ${activeGear}`;
-                    statusLbl.className = 'text-[10px] font-bold text-emerald-700';
+                    statusLbl.className = 'text-[10px] font-bold text-emerald-400';
                 }
             }
         }
